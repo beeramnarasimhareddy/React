@@ -1,0 +1,64 @@
+/* *{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end; 
+  position: fixed; 
+  top: 0;
+  
+  width: 100%;
+  background-color: #333; 
+  padding: 10px;
+  z-index: 1000;
+ 
+}
+
+.links{
+ padding: 5px;
+ margin-left: 20px;
+} */
+
+
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* Ensure no default margin on body */
+}
+
+.nav {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Distribute space between logo and links */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333; 
+  padding: 10px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 60px; /* Adjust the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between logo and links */
+}
+
+.links {
+  padding: 5px;
+  margin-left: 20px;
+  color: white; /* Change link color to white for visibility */
+  text-decoration: none; /* Remove underline */
+}
+
+.links:hover {
+  color: #ddd; /* Change color on hover for better UX */
+}
